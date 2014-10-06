@@ -166,7 +166,8 @@
 \setlength{\topmargin}{1mm}
 \setlength{\headheight}{1.36cm}
 \setlength{\headsep}{1.00cm}
-\setlength{\textheight}{15.84cm}
+%original \setlength{\textheight}{15.84cm}
+\setlength{\textheight}{20.84cm}
 \setlength{\textwidth}{14.5cm}
 \setlength{\marginparsep}{1mm}
 \setlength{\marginparwidth}{3cm}
@@ -174,7 +175,7 @@
 
 
 
-\pagestyle{fancy}
+%\pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\thechapter. #1 }}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 \fancyhf{}
@@ -225,7 +226,7 @@
 %  \null\vfill
   \begin{center}
     { \Huge {\bfseries {\@title}} \par}
-{\large \vspace*{35mm} {{\@crest} \par} \vspace*{25mm}}
+{\large \vspace*{30mm} {{\@crest} \par} \vspace*{25mm}}
     {{\Large \@author} \par}
 {\large \vspace*{1ex}
     {{\@collegeordept} \par}
