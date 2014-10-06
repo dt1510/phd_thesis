@@ -1,0 +1,16 @@
+*~
+*.log
+*.pdf
+*.dvi
+*.aux
+*.zip
+*.bbl
+*.blg
+*.brf
+*.glo
+*.gls
+*.ilg
+*.lof
+*.out
+*.gz
+*.toc

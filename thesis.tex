@@ -1,0 +1,82 @@
+%input macros (i.e. write your own macros file called MacroFile1.tex)
+%\include{Macros/MacroFile1}
+
+\documentclass[oneside,12pt]{Classes/myThesis}
+
+
+
+\ifpdf
+    \pdfinfo { /Title  (The automorphism group of the hyperenumeration degrees)
+               /Author (David Toth mmdt@leeds.ac.uk)
+               /CreationDate (D:)  %format D:YYYYMMDDhhmmss
+               /ModDate (D:20030815213532)
+               /Subject (Computability Theory)
+               /Keywords (PhD, Thesis)}
+    \pdfcatalog { /PageMode (/UseOutlines)
+                  /OpenAction (fitbh)  }
+\fi
+
+\title{The automorphism group of hyperenumeration degrees}
+\ifpdf
+  \author{\href{mailto:mmdt@leeds.ac.uk}{David Toth}}
+  \crest{\includegraphics[width=54mm]{Leeds_Crest.png}}
+  \collegeordept{\href{http://www.maths.leeds.ac.uk/}{The Department of Pure Mathematics}}
+  \university{\href{http://www.leeds.ac.uk}{University of Leeds}}
+
+\else
+  \author{David Toth}
+  \crest{\includegraphics[width=54mm]{Leeds_Crest.eps}}
+  \collegeordept{The Department of Pure Mathematics}
+  \university{University of Leeds}
+\fi
+
+
+\degree{Doctor of Philosophy}
+\degreedate{30th September 2017}
+
+\hbadness=10000
+\hfuzz=50pt
+\usepackage{StyleFiles/watermark}
+
+
+\begin{document}
+%\language{english}
+\renewcommand\baselinestretch{1.2}
+\baselineskip=18pt plus1pt
+
+
+
+\maketitle
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+%\frontmatter
+\include{Dedication/dedication}
+\include{Acknowledgement/acknowledgement}
+\include{Abstract/abstract}
+\include{Abbreviations/Abbreviations}
+
+\tableofcontents
+\listoffigures
+
+\mainmatter
+
+\include{Chapter1/Chapter1}
+%\include{Chapter2/Chapter2}
+%. Include Main chapters here
+%.
+
+
+\appendix
+\include{Appendix1/Appendix1}
+%\include{Appendix2/Appendix2}
+%. More appendicies here.
+
+\bibliographystyle{Classes/jmb} % bibliography style
+\renewcommand{\bibname}{References} 
+\bibliography{References/references} % References file
+\addcontentsline{toc}{chapter}{References} % Adds References to contents page
+
+
+\end{document}
