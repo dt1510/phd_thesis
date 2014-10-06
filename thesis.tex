@@ -3,7 +3,40 @@
 
 \documentclass[oneside,12pt]{Classes/myThesis}
 
+\usepackage{amsthm}
 
+\theoremstyle{pain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition} % definition numbers are dependent on theorem numbers
+
+%\theoremstyle{definition}
+%\newtheorem{theorem}[thm]{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{notation}[thm]{Notation}
+
+\theoremstyle{definition}
+\newtheorem{exmp}[thm]{Example}
+
+\theoremstyle{definition}
+\newtheorem{remark}[thm]{Remark}
+
+\theoremstyle{plain}
+\newtheorem{lemma}[thm]{Lemma}
+
+\theoremstyle{plain}
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\theoremstyle{plain}
+\newtheorem{proposition}[thm]{Proposition}
+
+\theoremstyle{plain}
+\newtheorem{corollary}[thm]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{note}[thm]{Note}
 
 \ifpdf
     \pdfinfo { /Title  (The automorphism group of the hyperenumeration degrees)
