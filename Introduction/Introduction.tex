@@ -9,6 +9,22 @@ No set can be both simple and creative.
 The complement of a simple set does not contain an infinite c.e. set. The complement of a creative set does contain an infinite c.e. set. Hence no set can be simple and creative.
 \end{proof}
 
+\begin{lemma}\label{lemma_creative}
+If $f : \mathbb{N} \to \mathbb{N}$ is computable and injective, then $C_f = \{f(x) : \varphi_x(f(x))\downarrow \}$ is creative.
+\end{lemma}
+\begin{proof}
+Clear.
+\end{proof}
+
+\begin{proposition}
+Let $A \in \Sigma_1$ and $\#A = \#\mathbb{N}$. Then there exists a creative set $C$ such that $C \subseteq A$.
+\end{proposition}
+
+\begin{proof}
+$A \in \Sigma_1$ and $\#A = \#\mathbb{N} \implies A=\{a_0, a_1, ... \}$ and $f:i \mapsto a_i$ is injective with $rng(f)=A$. 
+Hence $C=\{f(i) | \varphi_x(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by \autoref{lemma_creative} and $C \subseteq	 rng(f) = A$.
+\end{proof}
+
 
 
 
