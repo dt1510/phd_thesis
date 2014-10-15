@@ -25,6 +25,14 @@ $A \in \Sigma_1$ and $\#A = \#\mathbb{N} \implies A=\{a_0, a_1, ... \}$ and $f:i
 Hence $C=\{f(i) | \varphi_x(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by \autoref{lemma_creative} and $C \subseteq	 rng(f) = A$.
 \end{proof}
 
+\begin{lemma}
+There exists an infinite set $A$ such that all its infinite subsets are not c.e.
+\end{lemma}
+\begin{proof}
+Define $A=\{p_1^{\chi_K+1}\times...\times p_n^{\chi_K+1} \in \mathbb{N} : n \in \mathbb{N}\}$ where $p_1$, ..., $p_n$ are the first $n$ prime numbers.
+If there was a set $B \subseteq A$ then we could enumerate an element $p_1^{\chi_K+1}\times...\times p_n^{\chi_K+1}$ for an arbitrarily large $n$ from which we could decide $K$ for the first $n$ entries, as $n$ arbitrary hence for all entries, but $K$ not decidable.
+\end{proof}
+
 
 
 
