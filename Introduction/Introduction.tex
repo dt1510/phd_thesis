@@ -26,11 +26,11 @@ Hence $C=\{f(i) | \varphi_x(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by 
 \end{proof}
 
 \begin{lemma}
-There exists an infinite set $A$ such that all its infinite subsets are not c.e.
+Let $C \subseteq \mathbb{N}$ be an arbitrary set. Then there exists an infinite set $A$ such that all its infinite subsets are not Turing reducible to $C$.
 \end{lemma}
 \begin{proof}
-Define $A=\{p_1^{\chi_K+1}\times...\times p_n^{\chi_K+1} \in \mathbb{N} : n \in \mathbb{N}\}$ where $p_1$, ..., $p_n$ are the first $n$ prime numbers.
-If there was a set $B \subseteq A$ then we could enumerate an element $p_1^{\chi_K+1}\times...\times p_n^{\chi_K+1}$ for an arbitrarily large $n$ from which we could decide $K$ for the first $n$ entries, as $n$ arbitrary hence for all entries, but $K$ not decidable.
+Define $A=\{p_1^{\chi_{C'}+1}\times...\times p_n^{\chi_{C'}+1} \in \mathbb{N} : n \in \mathbb{N}\}$ where $p_1$, ..., $p_n$ are the first $n$ prime numbers.
+If there was a set $B \subseteq A$ then we could enumerate an element $p_1^{\chi_{C'}+1}\times...\times p_n^{\chi_{C'}+1}$ for an arbitrarily large $n$ from which we could decide $C'$ for the first $n$ entries, as $n$ arbitrary hence for all entries, but $C'$ not reducible to $C$ where $'$ denotes a Turing jump.
 \end{proof}
 
 
