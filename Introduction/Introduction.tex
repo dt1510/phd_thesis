@@ -22,17 +22,8 @@ Let $A \in \Sigma_1$ and $\#A = \#\mathbb{N}$. Then there exists a creative set 
 
 \begin{proof}
 $A \in \Sigma_1$ and $\#A = \#\mathbb{N} \implies A=\{a_0, a_1, ... \}$ and $f:i \mapsto a_i$ is injective with $rng(f)=A$. 
-Hence $C=\{f(i) | \varphi_x(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by \autoref{lemma_creative} and $C \subseteq	 rng(f) = A$.
+Hence $C=\{f(i) | \varphi_i(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by \autoref{lemma_creative} and $C \subseteq	 rng(f) = A$.
 \end{proof}
-
-\begin{lemma}
-Let $C \subseteq \mathbb{N}$ be an arbitrary set. Then there exists an infinite set $A$ such that all its infinite subsets are not Turing reducible to $C$.
-\end{lemma}
-\begin{proof}
-Define $A=\{p_1^{\chi_{C'}+1}\times...\times p_n^{\chi_{C'}+1} \in \mathbb{N} : n \in \mathbb{N}\}$ where $p_1$, ..., $p_n$ are the first $n$ prime numbers.
-If there was a set $B \subseteq A$ then we could enumerate an element $p_1^{\chi_{C'}+1}\times...\times p_n^{\chi_{C'}+1}$ for an arbitrarily large $n$ from which we could decide $C'$ for the first $n$ entries, as $n$ arbitrary hence for all entries, but $C'$ not reducible to $C$ where $'$ denotes a Turing jump.
-\end{proof}
-
 
 
 
