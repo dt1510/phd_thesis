@@ -25,5 +25,15 @@ $A \in \Sigma_1$ and $\#A = \#\mathbb{N} \implies A=\{a_0, a_1, ... \}$ and $f:i
 Hence $C=\{f(i) | \varphi_i(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by \autoref{lemma_creative} and $C \subseteq	 rng(f) = A$.
 \end{proof}
 
+\section{The structure of the Turing degrees $\mathcal{D}_T$}
+
+\begin{defn}For a set $A \in \powerset{\mathbb{N}}$ define $deg_\le(A):=\{B \in \powerset{\mathbb{N}} : B \le_T A \}$.
+\end{defn}
+
+\begin{defn}For an ordinal $\alpha \in \mathtt{Ord}$ define $\emptyset^{(\alpha)}$ as follows:\\
+i) if $\alpha=0$, then $\emptyset^{(0)}:=\emptyset$,\\
+ii) if $\alpha=s(\beta)$ is a successor ordinal with a predecessor $\beta$, then $\emptyset^{s(\beta)}:=\{x | \phi^{\emptyset^{(\beta)}}_x(x) \downarrow \}$,\\
+iii) if $\alpha$ is a limit ordinal ($\forall \beta \in \mathtt{Ord}. s(\beta) \not = \alpha$), then $deg_\le(\emptyset^{(\alpha)}):=\cup_{\beta \in \alpha} deg_\le(\emptyset^{(\beta)})$.
+\end{defn}
 
 
