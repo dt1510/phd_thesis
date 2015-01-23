@@ -30,8 +30,10 @@ Hence $C=\{f(i) | \varphi_i(f(i))\downarrow, i \in \mathbb{N}\}$ is creative by 
 \begin{defn}For an ordinal $\alpha \in \mathtt{Ord}$ define $\emptyset^{(\alpha)}$ as follows:\\
 i) if $\alpha=0$, then $\emptyset^{(0)}:=\emptyset$,\\
 ii) if $\alpha=s(\beta)$ is a successor ordinal with a predecessor $\beta$, then $\emptyset^{s(\beta)}:=\{x | \phi^{\emptyset^{(\beta)}}_x(x) \downarrow \}$,\\
-iii) if $\alpha$ is a limit ordinal ($\forall \beta \in \mathtt{Ord}. s(\beta) \not = \alpha$), then $\emptyset^{(\alpha)}):=sup(\cup_{\beta \in \alpha} \emptyset^{(\beta)})$.
+iii) if $\alpha$ is a limit ordinal ($\forall \beta \in \mathtt{Ord}. s(\beta) \not = \alpha$), then $\emptyset^{(\alpha)}=sup(\cup_{\beta < \alpha} \emptyset^{(\beta)})$.
 \end{defn}
+
+Note that if $\alpha < \omega_1^{CK}$ and $\alpha$ is a limit ordinal, then $\emptyset^{(\alpha)}:=sup(\cup_{\beta < \alpha} \emptyset^{(\beta)})=\{\langle x, \beta \rangle \in \mathbb{N} : x \in \emptyset^{(\beta)} \land \beta < \alpha\}$.
 
 \begin{proposition}
 $\exists \alpha \in \mathtt{Ord}. \forall \beta \in \mathtt{Ord}. \alpha < \beta \implies \emptyset^{(\alpha))} \equiv_T \emptyset^{(\beta)} \land \exists A \in \powerset{\mathbb{N}}. A >_T \emptyset^{(\alpha)}$.
