@@ -42,3 +42,7 @@ $\exists \alpha \in \mathtt{Ord}. \forall \beta \in \mathtt{Ord}. \alpha < \beta
 \begin{proof}
 From the definition of $\emptyset^{(\alpha)}$ it follows that if $\beta \le \alpha$ then $\emptyset^{(\beta)} \le_T \emptyset^{(\alpha)}$. Since there are more than $\omega_1$ ordinals, but only $\omega_1$ Turing degrees, the sequence $\emptyset^{(\alpha)}$ has to stabilize, so $\forall \beta \in \mathtt{Ord}. \alpha < \beta \implies \emptyset^{(\alpha)} \equiv_T \emptyset^{(\beta)}$. But there are only countably many oracle machines with the oracle $\emptyset^{(\alpha)}$, therefore there has to be some set $A \in \powerset{\mathbb{N}}$ that cannot be solved even with the oracle $\emptyset^{(\alpha)}$.
 \end{proof}
+
+\begin{problem}
+Find the the least ordinal $\alpha$ such that $\emptyset^{(\alpha)} \equiv_T \emptyset^{(\alpha+1)}$. Is it true that $\alpha < \omega_1^{CK}$?
+\end{problem}
