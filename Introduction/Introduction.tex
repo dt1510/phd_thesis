@@ -33,8 +33,12 @@ ii) if $\alpha=s(\beta)$ is a successor ordinal with a predecessor $\beta$, then
 iii) if $\alpha$ is a limit ordinal ($\forall \beta \in \mathtt{Ord}. s(\beta) \not = \alpha$), then $\emptyset^{(\alpha)}=sup(\cup_{\beta < \alpha} \emptyset^{(\beta)})$.
 \end{defn}
 
-Note that if $\alpha < \omega_1^{CK}$ and $\alpha$ is a limit ordinal, then $\emptyset^{(\alpha)}:=sup(\cup_{\beta < \alpha} \emptyset^{(\beta)})=\{\langle x, \beta \rangle \in \mathbb{N} : x \in \emptyset^{(\beta)} \land \beta < \alpha\}$.
+Let $\alpha$ be a limit ordinal. If $\alpha < \omega_1^{CK}$ then $\emptyset^{(\alpha)}:=sup(\cup_{\beta < \alpha} \emptyset^{(\beta)})=\{\langle x, \beta \rangle \in \mathbb{N} : x \in \emptyset^{(\beta)} \land \beta < \alpha\}$. In other case we do not know whether $\emptyset^{(\alpha)}$ is well-defined.
 
 \begin{proposition}
-$\exists \alpha \in \mathtt{Ord}. \forall \beta \in \mathtt{Ord}. \alpha < \beta \implies \emptyset^{(\alpha))} \equiv_T \emptyset^{(\beta)} \land \exists A \in \powerset{\mathbb{N}}. A >_T \emptyset^{(\alpha)}$.
+$\exists \alpha \in \mathtt{Ord}. \forall \beta \in \mathtt{Ord}. \alpha < \beta \implies \emptyset^{(\alpha)} \equiv_T \emptyset^{(\beta)} \land \exists A \in \powerset{\mathbb{N}}. A >_T \emptyset^{(\alpha)}$.
 \end{proposition}
+
+\begin{proof}
+From the definition of $\emptyset^{(\alpha)}$ it follows that if $\beta \le \alpha$ then $\emptyset^{(\beta)} \le_T \emptyset^{(\alpha)}$. Since there are more than $\omega_1$ ordinals, but only $\omega_1$ Turing degrees, the sequence $\emptyset^{(\alpha)}$ has to stabilize, so $\forall \beta \in \mathtt{Ord}. \alpha < \beta \implies \emptyset^{(\alpha)} \equiv_T \emptyset^{(\beta)}$. But there are only countably many oracle machines with the oracle $\emptyset^{(\alpha)}$, therefore there has to be some set $A \in \powerset{\mathbb{N}}$ that cannot be solved even with the oracle $\emptyset^{(\alpha)}$.
+\end{proof}
